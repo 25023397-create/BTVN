@@ -1,0 +1,33 @@
+package com.example;
+
+// Import các thu vi?n t? JUnit 5 (Jupiter)
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+/**
+ * Unit test hoàn ch?nh cho ?ng d?ng App.
+ * Ðã du?c d?ng b? hóa v?i JUnit 5 trong pom.xml.
+ */
+public class AppTest {
+
+    /**
+     * Ki?m tra co b?n d? d?m b?o môi tru?ng ki?m th? ho?t d?ng.
+     */
+    @Test
+    @DisplayName("Ki?m tra tính dúng d?n co b?n (Rigorous Test)")
+    public void shouldAnswerWithTrue() {
+        assertTrue(true, "Giá tr? tr? v? ph?i là true");
+    }
+
+    /**
+     * M?t ví d? v? ki?m th? logic (có th? m? r?ng sau này).
+     */
+    @Test
+    @DisplayName("Ki?m tra ví d? v? phép tính don gi?n")
+    public void testAddition() {
+        int sum = 1 + 1;
+        assertEquals(2, sum, "1 + 1 ph?i b?ng 2");
+    }
+}
